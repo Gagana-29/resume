@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+      <a href="resume.html">Resume</a>
+      <a href="biodata.html">Bio-data</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Hello!</h2>
+    <h3>I am Gagana s</h3>
+    <p>This website contains my <b>Resume</b> and <b>Bio-data</b> for reference. Please click the links above to view them.</p>
+    <button id="greetBtn">Click Me</button>
+    <p id="message"></p>
+  </main>
+
+  <footer>
+    <p>© 2025 My Personal Website</p>
+  </footer>
+
+  <script>
+    // Simple jQuery interaction
+    $("#greetBtn").click(function(){
+      $("#message").hide().text("Thanks for visiting my website!").fadeIn(1000);
+    });
+  </script>
+</body>
+</html>
